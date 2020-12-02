@@ -13,7 +13,8 @@ class Anagram
     letter_array = @word.split("")
     # split the argument array into separate words
     array.each do |word|
-      word.split("")
+      comparison_array = []
+      comparison_array << word.split("")
     end 
     binding.pry 
     # make each word into its own array 
