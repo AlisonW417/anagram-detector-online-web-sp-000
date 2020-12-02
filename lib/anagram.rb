@@ -9,6 +9,9 @@ class Anagram
   end 
   
   def match(array) 
+    array.select do |w|
+      w.split("").sort == @word.split("").sort 
+    end 
     # take the initialized word and splits it into array of single letters
     letter_array = @word.split("")
     # split the argument array into separate words
