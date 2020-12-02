@@ -18,7 +18,6 @@ class Anagram
       if x.sort == letter_array.sort
         anagram = x.join
       end
-      anagram
     end 
         
     
