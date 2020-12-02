@@ -12,8 +12,8 @@ class Anagram
     # take the initialized word and splits it into array of single letters
     letter_array = @word.split("")
     # split the argument array into separate words
+    comparison_array = []
     array.each do |w|
-      comparison_array = []
       comparison_array << w.split("")
     end 
     binding.pry 
