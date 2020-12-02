@@ -15,9 +15,10 @@ class Anagram
     comparison_array = []
     array.each { |w| comparison_array << w.split("")}
     comparison_array.select do |x|
-      if x.sort == letter_array.sort 
-        x.join
+      if x.sort == letter_array.sort
+        anagram = x.join
       end
+      anagram
     end 
         
     
