@@ -10,7 +10,7 @@ class Anagram
   
   def match(array) 
     # take the initialized word and splits it into array of single letters
-    letter_array = @word.split(" ")
+    letter_array = @word.split("")
     binding.pry
     # split the argument array into separate words
     # make each word into its own array 
