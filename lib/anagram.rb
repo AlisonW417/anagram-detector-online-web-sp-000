@@ -10,11 +10,17 @@ class Anagram
   
   def match(array) 
     # take the initialized word and splits it into array of single letters
-    letter_array = @word.split("").sort
+    letter_array = @word.split("")
     # split the argument array into separate words
     comparison_array = []
-    array.each { |w| comparison_array << w.split("").sort}
-    binding.pry
+    array.each { |w| comparison_array << w.split("")}
+    comparison_array.each do |x|
+      if x.sort == letter_array.sort 
+        x.join 
+      end
+    end 
+        
+    
       
     # make each word into its own array 
     # sort each array 
