@@ -12,7 +12,7 @@ class Anagram
     # take the initialized word and splits it into array of single letters
     letter_array = @word.split("")
     # split the argument array into separate words
-    
+    array.each do 
     # make each word into its own array 
     # sort each array 
     # compare each of these arrays to the letter_array 
