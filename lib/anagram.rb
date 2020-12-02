@@ -12,6 +12,7 @@ class Anagram
     @word.split(" ")
     
     
+    
   end 
   
 end 
