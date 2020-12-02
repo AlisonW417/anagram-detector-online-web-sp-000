@@ -12,9 +12,9 @@ class Anagram
     # take the initialized word and splits it into array of single letters
     letter_array = @word.split("")
     # split the argument array into separate words
-    array.each do |word|
+    array.each do |w|
       comparison_array = []
-      comparison_array << word.split("")
+      comparison_array << w.split("")
     end 
     binding.pry 
     # make each word into its own array 
