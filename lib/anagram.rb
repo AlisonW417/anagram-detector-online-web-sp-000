@@ -14,9 +14,9 @@ class Anagram
     # split the argument array into separate words
     comparison_array = []
     array.each { |w| comparison_array << w.split("")}
-    comparison_array.each do |x|
+    comparison_array.select do |x|
       if x.sort == letter_array.sort 
-        x.join 
+        x.join
       end
     end 
         
